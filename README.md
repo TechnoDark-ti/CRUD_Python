@@ -5,6 +5,8 @@ alguns trechos de código
 
 ## Tecnologias
 - Python 3.10.12
+- Flet
+- MySQL
 
 ## Build
 ~~~bash
