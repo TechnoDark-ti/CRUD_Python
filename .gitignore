@@ -4,6 +4,7 @@
 /resources/
 /bin/
 /lib/
+/share/
 /src/__pycache__
 
 pyvenv.cfg
