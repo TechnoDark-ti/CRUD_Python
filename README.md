@@ -1,24 +1,79 @@
-# README
-## Sistema CRUD 
-Este repositório nada mais é do que um experimento de um software desenvolvido em python para praticar
-alguns trechos de código e aplicando para gerenciamento de negócio genérico, podendo ser uma base para várias ramificações deste programa - servindo para várias nichos de negócios
+# Gerenciamento Comercial ERP de Hotel
 
-## Tecnologias Utilizadas
-- Python 3.10.12
-- Flet 0.20.2
-- Sqlite 0.0.1 || MySQL 8.3.0
+Este projeto é um sistema de Gerenciamento Comercial ERP simples, utilizando Python, SQLite e Flet para a interface gráfica. Ele permite realizar operações CRUD (Create, Read, Update, Delete) em um banco de dados de clientes.
 
-### Bibliotecas Necessárias para rodar o Flet no Linux:
-A execução de aplicativos Flet no Linux e requer GStreamer bibliotecas instaladas. Muito provavelmente você já os tem em seu sistema, mas se você está recebendo error while loading shared libraries: libgstapp-1.0.so.0: cannot open shared object file: No such file or directory ao executar o aplicativo Flet, você precisa instalar o GStreamer.
-~~~bash
-sudo apt update
-sudo apt install -y libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libgstreamer-plugins-bad1.0-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-tools gstreamer1.0-x gstreamer1.0-alsa gstreamer1.0-gl gstreamer1.0-gtk3 gstreamer1.0-qt5 gstreamer1.0-pulseaudio libmpv1 
-~~~
+## Estrutura do Projeto
 
-## Desenvolvimento
-Para o construição e desenvolvimento deste programa, leia atentamente a Licença do repositório e use o comando abaixo para prosseguir com o desenvolvimento
-~~~bash
-git clone 
-~~~
+```
+.
+├── database.py
+├── crud.py
+├── screen.py
+└── main.py
+```
+
+- **database.py**: Gerencia a conexão e as operações com o banco de dados SQLite.
+- **crud.py**: Funções CRUD para manipular os dados dos clientes.
+- **screen.py**: Interface gráfica utilizando a biblioteca Flet.
+- **main.py**: Inicia a aplicação Flet e chama a interface gráfica.
+
+## Instalação
+
+### Requisitos
+
+- Python 3.10 ou superior
+- Biblioteca Flet
+
+### Passos
+
+1. Clone o repositório:
+
+    ```bash
+    git clone https://github.com/
+    cd 
+    ```
+
+2. Crie um ambiente virtual e ative-o:
+
+    ```bash
+    python -m venv venv
+    virtualenv ven
+    source venv/bin/activate  # Para Windows: venv\Scripts\activate
+    ```
+
+3. Instale as dependências:
+
+    ```bash
+    pip install flet sqlite3
+    ```
+    ```bash
+    pip3 install flet sqlite3
+    ```
+
+## Uso
+
+1. Inicialize a aplicação:
+
+    ```bash
+    python main.py
+    ```
+
+2. A interface gráfica será aberta em uma nova janela, permitindo adicionar, visualizar, atualizar e deletar clientes.
+
+
+# Futuras Implementações
+ - Criação de novos inventários de hotel
+ - Tela de Login
+ - Migração de SGBD 
+ - Novas funções de Gerenciamento
+ - Executáveis (Appimage e .exe )
 
 ## Licença
+
+Este projeto está licenciado sob a GNU General Public License v3.0.
+
+## Autor
+
+**TechnoDark-ti**
+
+---
